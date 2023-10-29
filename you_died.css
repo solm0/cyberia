@@ -1,0 +1,101 @@
+
+@font-face {
+    font-family: 'ag';
+    src: url('../font/AppleGaramond\ 복사본.ttf') format('truetype');
+  }
+
+
+
+.container{
+    position: flex;
+    margin: 20% auto;
+    height: 150px;
+    width: 500px;
+    /* background-color: aliceblue; */
+    text-align: center;
+    color: crimson;
+    font-size: 100px;
+    font-family: 'ag';
+    animation: opacity 3s linear;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.newlife {
+    display: block;
+    position: relative;
+    margin: auto;
+    background-color: aliceblue;
+    width: 300px;
+    height: 100px;
+    top: 80px;
+    font-size: 50px;
+    box-shadow: 2px 2px 30px rgba(255, 255, 255, 0.8), -2px -2px 30px rgba(255, 255, 255, 0.8); ;
+    animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+      background-color: red;
+    }
+    15% {
+        background-color: orange;
+    }
+    30% {
+      background-color: yellow;
+    }
+    45% {
+        background-color: green;
+    }
+    60% {
+        background-color: blue;
+    }
+    75% {
+        background-color: blueviolet;
+    }
+    100% {
+      background-color: red;
+    }
+  }
+
+.coin {
+    position: relative;
+    font-size: 30px;
+    top: 40px;
+}
+
+.coinimg {
+    width: 22px;
+}
+
+
+
+/* .scoretext {
+    font-size: 20px;
+    width: 100%;
+    height: 20px;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    color: aliceblue;
+    font-family: Courier;
+}
+
+#scoreDisplay {
+    display: block;
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    color: aliceblue;
+} */

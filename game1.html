@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/game1.css">
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+  <div id="iframeContainer" onmouseover="showIframe()" onmouseout="hideIframe()">
+    <div class="userimg">
+        <img src="./img/userimg.jpg" alt="">
+      </div>
+    <p class="mypg">My Page</p>
+    <div id="iframeOverlay" onmouseover="showIframe()" onmouseout="hideIframe()">
+      <div id="iframeContent">
+        <iframe src="./my_page.html" width="100%" height="100%"></iframe>
+      </div>
+    </div>
+  </div>
+
+      
+    <div id="message"></div>
+
+    <div class="box">
+        <div class="container">
+            <div class="cup" id="cup1" onclick="cupClick(this)">
+            <img src="./img/컵.png" alt=""> </div>
+        
+            <div class="cup" id="cup2" onclick="cupClick(this)">
+            <img src="./img/컵.png" alt=""> </div>
+            <img id="cup4" src="./img/컵3.png" alt="">
+            <div id="quiztext">전원을 끈 <br>상태에서도 전기<br>제품이 소비하는 전력을 2.____라고 한다. 이것으로 인해 전기세 낭비는 물론 이산화탄소가 발생해 환경에도 부담이 된다.(4)
+            </div>
+        
+            <div class="cup" id="cup3" onclick="cupClick(this)">
+            <img src="./img/컵.png" alt=""></div>
+
+            <div class="accela">
+                <a href="./game2.html">
+                  <img src="./img/Accela3.png" alt="">
+                </a>
+              </div>
+        </div>
+    </div>
+
+
+    <button onclick="shuffleCups()" class="button">shuffle!</button>
+
+<div class="round">Round 1/2</div> 
+    <script src="./js/game1.js"></script>
+      
+</body>
+</html>

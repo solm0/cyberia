@@ -1,0 +1,189 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
+#iframeContainer {
+  position: fixed;
+  color: blue;
+  margin: auto;
+  right: 5%;
+  top: 25px;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'ag';
+  z-index: 1;
+}
+
+.userimg img {
+  margin-top: 5px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  /* border: 2px solid dimgray; */
+}
+
+#iframeOverlay {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 300px;
+  height: 400px;
+  display: none;
+  z-index: 1;
+}
+
+#iframeContainer:hover #iframeOverlay {
+  display: block;
+}
+
+#iframeContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.mypg {
+  margin: 0;
+}
+
+
+
+
+
+
+@font-face {
+    font-family: 'ag';
+    src: url('../font/AppleGaramond\ 복사본.ttf') format('truetype');
+  }
+
+.round {
+    position: fixed;
+    margin: auto;
+    top: 30px;
+    left: 35px;
+    color: aliceblue;
+    font-family:'ag';
+    font-size: 30px;
+  }
+
+
+.quiztext {
+  width: 500px;
+  height: 130px;
+    margin-left: 130px;
+    position: absolute;
+    bottom: 33%;
+    animation: moving 15s infinite;
+    color: black;
+    text-align: center;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'gulim';
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.quiztext:hover {
+ color: dimgray;
+}
+
+.circle {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    margin-left: 30px;
+    position: absolute;
+    bottom: 3%;
+    border: 6px solid blue;
+    /* background-color: darkblue; */
+    animation: moving 15s infinite;
+    overflow: hidden;
+}
+
+@keyframes moving {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(calc(100vw - 700px - 30px));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+.rotating {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    /* background-color: dimgray; */
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    animation: haha 4s linear infinite;
+    transform-origin: 350px;
+}
+
+@keyframes haha {
+    100%{
+        transform: rotate(360deg);
+    }
+    }
+
+.target {
+    left: 0;
+    animation: haha 4s linear infinite reverse ;
+}
+
+#images {
+    position: relative;
+    margin: 90px auto auto 30px;
+}
+
+.dartpin {
+    width: 100px;
+}
+
+
+
+#mark {
+
+position: absolute;
+display: none;
+  width: 100px;
+  height: 100px;
+}
+
+#mark::before,
+#mark::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10px;
+  height: 100%;
+  background-color: crimson;
+  transform-origin: center;
+}
+
+#mark::before {
+  transform: translateX(-50%) rotate(45deg);
+}
+
+#mark::after {
+  transform: translateX(-50%) rotate(-45deg);
+}

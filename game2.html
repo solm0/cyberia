@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/game2.css">
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+<body onclick="handleClick()">
+  <div id="iframeContainer" onmouseover="showIframe()" onmouseout="hideIframe()">
+    <div class="userimg">
+        <img src="./img/userimg.jpg" alt="">
+      </div>
+    <p class="mypg">My Page</p>
+    <div id="iframeOverlay" onmouseover="showIframe()" onmouseout="hideIframe()">
+      <div id="iframeContent">
+        <iframe src="./my_page.html" width="100%" height="100%"></iframe>
+      </div>
+    </div>
+  </div>
+
+      
+    <div id="images">
+       <img src="./img/dart.png" class="dartpin" alt="">
+       <img src="./img/dart.png" class="dartpin" alt="">
+       <img src="./img/dart.png" class="dartpin" alt="">
+       <img src="./img/dart.png" class="dartpin" alt="">
+       <img src="./img/dart.png" class="dartpin" alt="">
+      </div>
+
+
+
+
+
+
+    <div class="circle">
+        <div class="rotating">
+            <a href="./accela.html">
+                <div>
+                    <img class="target" src="./img/accela3.png" alt="">
+                </div>
+              </a>
+        </div>
+    </div>
+
+    <div class="quiztext">
+      울산과학기술원 도시환경공학과 최성득 교수 연구팀은 과열된 컴퓨터에서 3._________가 나와 실내 공기를 오염시킨다는 연구결과를 발표했다. 3._________는 여러 개의 벤젠 고리가 융합된 대표적인 유해 대기오염물질이다. 밀폐된 공간에서는 3._________를 비롯한 다양한 유해 대기오염물질에 노출될 수 있으니 환기를 자주 하고 적정 실내 온도를 유지해야 한다.(9)
+    </div>
+
+    <div id="mark">
+    </div>
+
+    <div class="round">Round 2/2</div>
+    <script src="./js/game2.js"></script>
+
+</body>
+</html>
