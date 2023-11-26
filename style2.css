@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    position: absolute;
+    width: calc(100vw-20px);
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(17, 18, 18);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  @font-face {
+    font-family: 'ag';
+    src: url('../font/AppleGaramond\ 복사본.ttf') format('truetype');
+}
+
+
+  @font-face {
+    font-family: 'cipher';
+    src: url('../font/BabelStoneClubPenguin.ttf') format('truetype');
+  }
+
+  
+::-webkit-scrollbar-thumb{
+    background-color: blue;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 20px;
+    background-color: dimgray;
+  }
+  
+
+  
+
+h1 {
+    position: absolute;
+    width: 90%;
+    background-color: dimgray;
+    height: 200px ;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+    font-family: 'ag';
+    color: blue;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8), -2px -2px 10px rgba(0, 0, 0, 0.8); /* 두 개의 그림자 추가 */
+  }
+
+  .cyberia:hover{
+    animation: rotate 3s infinite ease-in-out; /* 회전 애니메이션 설정 */
+  }
+
+@keyframes rotate{
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+  
+  
+ul {
+    position: absolute;
+    width: 90%;
+    background-color: blue;
+    height: 30px;
+    margin-top: 250px;
+    font-family: 'ag';
+    justify-content: space-evenly;
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+
+  li {
+    /* background-color: aqua; */
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    font-family: 'ag';
+    font-size: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+
+  .container {
+    position: relative;
+    margin-top: 310px;
+    width: 90%;
+  }
+  
+  .scroll_vid {
+    position: fixed;
+    margin-top: 8px;
+    width: 240px;
+    border: 2px solid dimgray;
+  }
+  
+  .scroll_vid:hover {
+    cursor: ns-resize;
+    transform: scale(3); /* 10% 크기로 확대 */
+    transform-origin: top left;
+  }
+
+  
+  .text {
+      margin: 0 275px;
+      color: crimson;
+      font-family: 'cipher', serif;
+      font-size: 13px;
+      line-height: 1.4;
+      column-gap: 10px;
+      column-width: 200px;
+  }
+  
+  p {
+      margin: 0;
+  }
+  
+  .img {
+      display: block;
+      width: 180px;
+      margin-top: 10px;
+      text-align: center;
+  }
+  .img:hover{
+    filter:contrast(300%);
+    image-rendering: pixelated;
+    width: 220px;
+  }
+  
+  .caption {
+      text-align: left;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 15px;
+      margin-bottom: 30px;
+      color: dimgray;
+  }
+  
+  
+  
+  
+  
+  .banner {
+      width: 300px;
+      height: 200px;
+      border: 2px solid dimgray;
+      background-color: blue;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: move 50s linear infinite ;
+      z-index: 3;
+  }
+  
+    @keyframes move {
+      0% {
+        transform: translate(0, 0);
+      }
+      20% {
+        transform: translate(calc(100vw - 320px), 40vh);
+      }
+      40% {
+          transform: translate(0, 80vh);
+      }
+      80% {
+        transform: translate(calc(100vw - 320px), 40vh);
+      }
+      100% {
+          transform: translate(0, 0)
+      }
+    }
+  
+    .banner>img {
+      position: absolute;
+      width: 50%;
+      top: 10px;
+    }
+  
+  
+    .accela {
+      position: absolute;
+      bottom: 5px;
+      left: 10px;
+      color: black;
+      font-size: 60px;
+      font-family: 'ag';
+    }
+
+    .accelatext {
+        position: absolute;
+        height: 150px;
+        margin-top: 10px;
+        width: 120px;
+        left: 55%;
+        font-size: 13px;
+        color: red;
+        font-family: Courier;
+      }
+  
+    .yes {
+      position: absolute;
+      height: 30px;
+      width: 110px;
+      background-color: lightgrey;
+      text-align: center;
+      font-size: 15px;
+      font-family: 'gulim';
+      left: 55%;
+      margin-top: 155px;
+      cursor: pointer;
+    }
+  
+
+
+@media screen and (max-width: 524px) {
+    .banner {
+        animation: none;
+        position: absolute;
+        top: 10px;
+        left: 5%;
+        width: 89%;
+    }
+    .banner>img {
+        width: 160px;
+        left: 20px;
+    }
+    h1 {
+        position: relative;
+        top: 199px;
+        height: 150px;
+        font-size: 80px;
+        z-index: 1;
+    }
+    ul {
+        top: 80px;
+        flex-direction: column;
+        height: 130px;
+        width: 90%;
+        background-color: dimgray;
+        align-items: center;
+        justify-content: center;
+    }
+    .scroll_vid {
+        margin-top: 50px;
+        position: sticky;
+        top: 10px;
+        width: 85vw;
+    }
+    .scroll_vid:hover {
+        cursor: default;
+        transform: none;
+      }
+      .text {
+        margin-top: 30px;
+        margin-left: 0;
+        margin-right: 0;
+        color: crimson;
+        font-family: 'cipher', serif;
+        font-size: 13px;
+        line-height: 1.4;
+        column-width: 210px;
+    }
+}
