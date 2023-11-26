@@ -4,10 +4,7 @@ body {
   background-color: rgb(17, 18, 18);
 }
 
-@font-face {
-  font-family: 'ag';
-  src: url('./AppleGaramond.ttf') format('truetype');
-}
+@import url('https://fonts.cdnfonts.com/css/apple-garamond');
 
 .round {
   position: fixed;
@@ -15,7 +12,7 @@ body {
   top: 30px;
   left: 35px;
   color: aliceblue;
-  font-family: 'ag';
+  font-family: 'Apple Garamond';
   font-size: 30px;
 }
 
@@ -267,7 +264,7 @@ transform: translateX(-50%) rotate(-45deg);
   text-align: center;
   color: crimson;
   font-size: 100px;
-  font-family: 'ag';
+  font-family: 'Apple Garamond';
   animation: opacity 3s linear;
 }
 

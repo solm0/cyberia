@@ -6,16 +6,13 @@ body {
   background-color: rgb(17, 18, 18);
 }
 
-@font-face {
-    font-family: 'ag';
-    src: url('./AppleGaramond.ttf') format('truetype');
-}
+@import url('https://fonts.cdnfonts.com/css/apple-garamond');
 
 
 .welcome {
     display: block;
     font-size: 50pt;
-    font-family: 'ag';
+    font-family: 'Apple Garamond';
     margin: 30px 50px ;
 }
 
@@ -50,7 +47,7 @@ body {
 .beercap {
     font-size: 20px;
     text-align: center;
-    font-family: 'ag';
+    font-family: 'Apple Garamond';
 }
 
 .login {
