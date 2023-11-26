@@ -6,7 +6,7 @@ body {
 
 @font-face {
   font-family: 'ag';
-  src: url('../font/AppleGaramond\ 복사본.ttf') format('truetype');
+  src: url('./AppleGaramond.ttf') format('truetype');
 }
 
 .round {
@@ -15,7 +15,7 @@ body {
   top: 30px;
   left: 35px;
   color: aliceblue;
-  font-family: "ag";
+  font-family: 'ag';
   font-size: 30px;
 }
 
@@ -73,7 +73,7 @@ body {
   height: 135px;
   left: 432px;
   text-align: center;
-  font-family: "gulim";
+  font-family:'gulim';
   font-size: 13px;
   top: -80px;
   line-height: 1.2;
@@ -154,7 +154,7 @@ body {
   margin: -50px auto;
   width: 100vw;
   color: aliceblue;
-  font-family: "Gulim";
+  font-family: 'Gulim';
 }
 
 
