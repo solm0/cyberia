@@ -1,0 +1,35 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.cursor-container {
+    position: fixed;
+    pointer-events: none;
+  }
+
+  .cursor-container img {
+    position: absolute;
+    margin-left: -100px;
+    margin-top: -160px;
+  }
+
+  html {
+    cursor: none;
+  }
+
+.container2 {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* 화면 전체 너비 */
+    height: 100%; /* 화면 전체 높이 */
+  }
+
+.circle {
+    position: absolute;
+    border-radius: 0%;
+    background-color: lime;
+  }

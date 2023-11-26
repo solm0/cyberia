@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+.link {
+    height: 100vh;
+    width: 100vw;
+}
+
+.cursor-container {
+    text-align: center;
+    font-family: 'gulim';
+    font-size: 13px;
+    position: absolute;
+    width: 150px;
+    margin-left: -70px;
+    margin-top: -50px;
+    cursor: none;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: darkblue;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width 5s, height 5s;
+    animation: opacity 5s;
+  }
+
+  @keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+  }
+
+  .ifeel {
+    font-family: 'courier';
+    font-size: 20px;
+    position: absolute;
+    margin: auto;
+    color: white;
+    display: none;
+    z-index: 1;
+  }
